@@ -1,0 +1,87 @@
+@import 'bulma';
+@import '~bulma-switch';
+@import '~bulma-tooltip';
+
+.is_background_black {
+	background-color: black;
+}
+
+.is_background_gray {
+	background-color: #2e323a;
+	color: white;
+}
+
+.layout {
+	width: 100%;
+	height: 100vh;
+	background-color: #f8f8f8;
+}
+.is_fullheight {
+	height: 100%;
+}
+.is-fullwidth {
+	width: 100%;
+}
+.main-section {
+	background-color: white;
+	border: 1px solid #dedede;
+	flex-grow: 1;
+	flex-shrink: 0;
+	padding: 1rem 1.5rem;
+}
+.controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.modal .is-four-fifths {
+	width: 75%;
+}
+td.isActive {
+	background-color: blue;
+}
+td.isInactive {
+	background-color: red;
+}
+.custom-td {
+	border: 1px solid rgba(120, 117, 117, .5) !important;
+	cursor: pointer;
+	color: white;
+}
+.has-centered {
+	margin: 0 auto;
+}
+.is-full-width {
+	width: 100%;
+}
+.upload input[type=file] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	outline: none;
+	cursor: pointer;
+	z-index: -1;
+}
+.upload,
+.upload .upload-draggable {
+	display: block;
+}
+.upload .upload-draggable {
+	cursor: pointer;
+	padding: .25em;
+	border: 1px dashed #b5b5b5;
+	border-radius: 6px;
+}
+
+.is-256x256 {
+	height: 256px;
+	width: 256px;
+}
+
+@import "./components/Input/Input.scss";
+@import "./components/Select/Select.scss";
+@import "./components/Icon/Icon.scss";

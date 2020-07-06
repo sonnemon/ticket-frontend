@@ -1,0 +1,57 @@
+$control-border-width: 2px;
+$input-border-color: rgba(0, 0, 0, 0.1);
+$input-shadow: none;
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.field {
+	.control {
+		.select {
+			position: relative !important;
+			display: flex;
+			align-items: center;
+			select {
+				&.first {
+					color: #cdcdcd;
+				}
+				height: 50px;
+				padding-left: 24px;
+				font-family: $body-family;
+				z-index: 1;
+				&._icon {
+					padding-left: 2rem !important;
+				}
+				&.half_padding {
+					padding: 1.15rem;
+				}
+				font-size: 1.1rem;
+				letter-spacing: 0.8px;
+			}
+		}
+		._select_error_container {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			overflow: hidden;
+			._select_error {
+				animation: 0.35s ease-out 0s 1 slideInFromLeft;
+				color: $red;
+				font-size: 0.8rem;
+				position: absolute;
+				left: 0;
+				bottom: 0px;
+				font-weight: 600;
+			}
+		}
+	}
+}
